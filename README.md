@@ -1,5 +1,6 @@
 # biotrends
 Author:  Dario Ghersi
+Required module: pymysql
 
 Collection of simple scripts to track the "popularity" of MeSH terms in the biomedical literature.
 
@@ -40,6 +41,14 @@ python
 
 ## Compute the popularity of MeSH terms over the years
 
-The following script computes the number of articles containing given mesh terms 
-If you want a denominator to normalize the number of articles, run the following script:
+The following script computes the number of articles containing given mesh terms:
 
+```
+python extractTimeCourses.py pubmed2015
+```
+
+If you want a denominator to normalize the number of articles published every year, run the following script:
+
+```
+python getNumOfPapersPerYear.py pubmed2015
+```
