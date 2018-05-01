@@ -19,7 +19,7 @@ GRANT ALL ON medline.* TO 'medline'@'localhost';
 
 ```
 
-Then, as ```medline``` user run the ```createTables.sql```:
+Then, as ```medline``` user run the ```createTables.sql``` script:
 
 ```
 mysql --database medline -u medline -p < createTables.sql
