@@ -30,15 +30,19 @@ mysql --database medline -u medline -p < createTables.sql
 1. Populate the MeSH term and qualifier tables by running the following script on the mesh data:
 
 ```
-python fillMeshTable.py d2015.bin pubmed2015
-python fillMeshQualifTable.py q2015.bin pubmed2015
+python fillMeshTable.py mesh/d2015.bin pubmed2015
+python fillMeshQualifTable.py mesh/q2015.bin pubmed2015
 ```
 
-2. Populate the articles and records tables by running the following script on the Medline XML files:
+2. Populate the articles and records tables by running the following script on the (unzipped) Medline XML files:
 
 ```
-python 
+python fillArticleTable.py medline/medline15n0778.xml
 ```
+
+Of course you need to download the full collection of medline XML files, available at:
+
+https://www.nlm.nih.gov/databases/download/pubmed_medline.html
 
 ## Compute the popularity of MeSH terms over the years
 
