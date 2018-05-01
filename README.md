@@ -44,6 +44,8 @@ Of course you need to download the full collection of medline XML files, availab
 
 https://www.nlm.nih.gov/databases/download/pubmed_medline.html
 
+and run the script on each XML file.
+
 ## Compute the popularity of MeSH terms over the years
 
 The following script computes the number of articles containing given mesh terms:
