@@ -1,4 +1,4 @@
-CREATE TABLE articles (pubmedID VARCHAR(10), title TEXT, abstract TEXT,
+CREATE TABLE articles (pubmedID VARCHAR(10), 
 affiliation TEXT, year YEAR(4),
 PRIMARY KEY(pubmedID));
 ALTER TABLE articles ADD INDEX(pubmedID), ADD INDEX(year);
